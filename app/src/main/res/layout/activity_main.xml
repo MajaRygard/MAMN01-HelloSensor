@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F2F2"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Velcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Välkommen till min sensor-app!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="241dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="340dp"
+        android:backgroundTint="#409E30"
+        android:text="Start Accelerometer"
+        app:layout_constraintBottom_toTopOf="@+id/Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-128dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Reset"
+        android:textColor="#424242"
+        app:layout_constraintBottom_toTopOf="@+id/Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/start_angle"
+        android:layout_width="241dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="244dp"
+        android:backgroundTint="#2196F3"
+        android:text="Start Angle Detection"
+        app:layout_constraintBottom_toTopOf="@+id/Text"
+        app:layout_constraintEnd_toEndOf="@id/Velcome"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@id/Velcome" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="241dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="#CF493F"
+        android:text="Stop"
+        app:layout_constraintBottom_toTopOf="@+id/Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(0,0,0)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
